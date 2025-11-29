@@ -1,0 +1,1 @@
+import{g as o}from"./chunk-4WY6JWTD-Cksk4_a3.js";import{r as a}from"./index-BL2E2u6T.js";var r={},e;function i(){if(e)return r;e=1;var t=a();return r.createRoot=t.createRoot,r.hydrateRoot=t.hydrateRoot,r}var c=i();const R=o(c);export{R,c};

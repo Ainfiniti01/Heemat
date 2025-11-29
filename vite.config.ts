@@ -13,7 +13,7 @@ import { restart } from './plugins/restart.ts';
 import { restartEnvFileChange } from './plugins/restartEnvFileChange.ts';
 
 export default defineConfig({
-  base: process.env.VITE_APP_BASE_PATH || '/', // Dynamically set base URL based on environment variable, default to /
+  base: process.env.VITE_APP_BASE_PATH || (process.env.NODE_ENV === 'production' ? '/Heemat/' : '/'), // Dynamically set base URL, default to /Heemat/ in production for GitHub Pages
   root: '.', // Explicitly set the root to the current directory
 
   // Keep them available via import.meta.env.NEXT_PUBLIC_*

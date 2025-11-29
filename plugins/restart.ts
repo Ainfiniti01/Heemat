@@ -77,14 +77,14 @@ export function restart(options: VitePluginRestartOptions = {}): Plugin {
 			server.watcher.on('unlink', handleFileChange);
 
 			function handleFileChange(file: string) {
-				if (micromatch.isMatch(file, restartGlobs)) {
+				if (micromatch.isMatch(file, restartGlobs, {})) {
 					timerState = 'restart';
 					console.log('File changed, scheduling restart:', file);
 					schedule(() => {
 						server.restart();
 					});
 				} else if (
-					micromatch.isMatch(file, reloadGlobs) &&
+					micromatch.isMatch(file, reloadGlobs, {}) &&
 					timerState !== 'restart'
 				) {
 					timerState = 'reload';

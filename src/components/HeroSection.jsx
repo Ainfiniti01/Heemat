@@ -18,7 +18,7 @@ export default function HeroSection() {
   headline: "Discover the Latest Wig Collection",
   subtext:
     "Explore our newest luxury wigs — from silky straight to deep curls. Each piece is crafted for natural beauty, comfort, and confidence.",
-  ctaText: "Shop Luxury Wigs”",
+  ctaText: "Shop Luxury Wigs",
   ctaLink: "/products",
   textPosition: "left",
   accentColor: "emerald",

@@ -34,8 +34,35 @@ import 'virtual:load-fonts.css';
 // import { useSandboxStore } from '../__create/hmr-sandbox-store'; // Removed for static site
 import type { Route } from './+types/root';
 // import { useDevServerHeartbeat } from '../__create/useDevServerHeartbeat'; // Removed for static site
+import ScrollToTopButton from '../components/ScrollToTopButton';
+import { CartProvider } from '../context/CartContext';
 
 export const links = () => [];
+
+export const metadata = {
+  title: "Heemat's Collection - Trendy & Affordable Fashion Store",
+  description:
+    "Discover our exclusive collection of handcrafted Hair Care & Accessories, Frontals & Closures, and accessories. Premium fashion at affordable prices with worldwide shipping.",
+  keywords:
+    "fashion, Hair Care & Accessories, Frontals & Closures, accessories, trendy fashion, affordable fashion, online fashion store",
+  author: "Heemat's Collection",
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
+  openGraph: {
+    title: "Heemat's Collection - Trendy & Affordable Fashion Store",
+    description:
+      "Discover our exclusive collection of handcrafted Hair Care & Accessories, Frontals & Closures, and accessories.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Heemat's Collection",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Heemat's Collection - Trendy & Affordable Fashion Store",
+    description:
+      "Discover our exclusive collection of handcrafted Hair Care & Accessories, Frontals & Closures, and accessories.",
+  },
+};
 
 if (globalThis.window && globalThis.window !== undefined) {
   globalThis.window.fetch = fetch;
@@ -335,16 +362,31 @@ export function Layout({ children }: { children: ReactNode }) {
     }
   }, [pathname]);
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
         <link rel="icon" href="/images/logo.jpg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body>
-        <ClientOnly loader={() => children} />
+      <body className="antialiased">
+        <div className="min-h-screen bg-white dark:bg-[#121212] text-black dark:text-white">
+          <CartProvider>
+            <ClientOnly loader={() => children} />
+          </CartProvider>
+        </div>
+        <ScrollToTopButton />
         {/* <HotReloadIndicator /> */}
         <Toaster position="bottom-right" />
         <ScrollRestoration />

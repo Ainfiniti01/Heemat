@@ -1,7 +1,7 @@
 import * as babel from '@babel/core';
 import type { PluginOption } from 'vite';
-import type { NodePath, PluginObj } from '@babel/core';
-import type { JSXElement } from '@babel/types';
+import type { NodePath } from '@babel/traverse';
+import type { JSXAttribute, JSXElement, JSXSpreadAttribute } from '@babel/types';
 import type * as t from '@babel/types';
 
 import { createHash } from 'node:crypto';
@@ -19,12 +19,12 @@ const idToJsx = { current: {} as Record<string, { code: string }> };
 
 const getRenderIdVisitor =
   ({ filename }: { filename: string }) =>
-  (api: BabelAPI): PluginObj => {
+  (api: BabelAPI): any => { // Using 'any' as a workaround for PluginObj type resolution issues
     const { types: t } = api;
 
     return {
       visitor: {
-        JSXElement(path: NodePath<JSXElement>) {
+        JSXElement(path: any) { // Workaround for NodePath type resolution
           const opening = path.node.openingElement;
 
           // We only care about <tag> where tag is lowercase (HTML intrinsic)
@@ -63,7 +63,7 @@ const getRenderIdVisitor =
 
           // If it already has a renderId prop, leave it alone
           const hasRenderId = opening.attributes.some(
-            (attr) =>
+            (attr: t.JSXAttribute | t.JSXSpreadAttribute) =>
               t.isJSXAttribute(attr) &&
               t.isJSXIdentifier(attr.name) &&
               attr.name.name === 'renderId'
@@ -79,7 +79,7 @@ const getRenderIdVisitor =
           });
 
           // Ensure PolymorphicComponent import exists at top‑level
-          const program = path.findParent((p) => p.isProgram());
+          const program = path.findParent((p: any) => p.isProgram()); // Workaround for NodePath type resolution
           if (!program) {
             console.warn(
               `No program found for ${filename} so unable to add CreatePolymorphicComponent import`

@@ -1,5 +1,5 @@
 import fg from 'fast-glob';
-import type { Route } from './+types/not-found.ts';
+import type { Route } from '../../src/app/__create/+types/not-found.ts';
 import { useNavigate } from 'react-router';
 import { useCallback, useEffect, useState } from 'react';
 

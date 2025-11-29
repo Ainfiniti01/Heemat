@@ -9,7 +9,6 @@ pnpm-debug.log*
 
 # Dependencies
 node_modules/
-/build/
 .env
 .env.local
 .env.development.local

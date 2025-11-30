@@ -13,12 +13,8 @@ import { restart } from './plugins/restart.ts';
 import { restartEnvFileChange } from './plugins/restartEnvFileChange.ts';
 
 export default defineConfig({
-  // GitHub Pages uses /Heemat/
   // Vercel uses /
-  base:
-    process.env.GITHUB_PAGES === "true"
-      ? "/Heemat/"
-      : "/",
+  base:"/",
   root: '.', // Explicitly set the root to the current directory
 
   // Keep them available via import.meta.env.NEXT_PUBLIC_*

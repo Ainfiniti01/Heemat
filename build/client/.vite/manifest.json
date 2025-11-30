@@ -6,8 +6,8 @@
       "_chunk-4WY6JWTD-DAU-Ex8K.js"
     ]
   },
-  "_Footer-BRZlSvKV.js": {
-    "file": "assets/Footer-BRZlSvKV.js",
+  "_Footer-NCyrBeYo.js": {
+    "file": "assets/Footer-NCyrBeYo.js",
     "name": "Footer",
     "imports": [
       "_chunk-4WY6JWTD-DAU-Ex8K.js",
@@ -169,20 +169,6 @@
       "_createLucideIcon-Buas3aYT.js"
     ]
   },
-  "index.html": {
-    "file": "assets/index-BTqYVknP.js",
-    "name": "index",
-    "src": "index.html",
-    "isEntry": true,
-    "imports": [
-      "node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx",
-      "_chunk-4WY6JWTD-DAU-Ex8K.js",
-      "_index-Brga89B9.js"
-    ],
-    "assets": [
-      "assets/root-CiB7PO19.tsx"
-    ]
-  },
   "node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx": {
     "file": "assets/entry.client-Tv5x4F7C.js",
     "name": "entry.client",
@@ -203,14 +189,14 @@
     ]
   },
   "src/app/about/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-Bi85zF2p.js",
+    "file": "assets/page-BQpoRsfZ.js",
     "name": "page",
     "src": "src/app/about/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_chunk-4WY6JWTD-DAU-Ex8K.js",
       "_layout-DcuK62cq.js",
-      "_Footer-BRZlSvKV.js",
+      "_Footer-NCyrBeYo.js",
       "_heart-C8MmyeXq.js",
       "_createLucideIcon-Buas3aYT.js",
       "_star-CIXZKIkJ.js",
@@ -386,7 +372,7 @@
     ]
   },
   "src/app/cart/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-CmRrW7J7.js",
+    "file": "assets/page-ChaP9xCw.js",
     "name": "page",
     "src": "src/app/cart/page.jsx?__react-router-build-client-route",
     "isEntry": true,
@@ -394,7 +380,7 @@
       "_chunk-4WY6JWTD-DAU-Ex8K.js",
       "_layout-DcuK62cq.js",
       "_CartContext-BDazx4em.js",
-      "_Footer-BRZlSvKV.js",
+      "_Footer-NCyrBeYo.js",
       "_createLucideIcon-Buas3aYT.js",
       "_trash-2-Ca-buCHJ.js",
       "_message-circle-Du-Be5xz.js",
@@ -404,14 +390,14 @@
     ]
   },
   "src/app/contact/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-eBIiBbwI.js",
+    "file": "assets/page-DAWJ-fib.js",
     "name": "page",
     "src": "src/app/contact/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_chunk-4WY6JWTD-DAU-Ex8K.js",
       "_layout-DcuK62cq.js",
-      "_Footer-BRZlSvKV.js",
+      "_Footer-NCyrBeYo.js",
       "_createLucideIcon-Buas3aYT.js",
       "_message-circle-Du-Be5xz.js",
       "_CartContext-BDazx4em.js",
@@ -421,14 +407,14 @@
     ]
   },
   "src/app/faq/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-C3wz836v.js",
+    "file": "assets/page-BqPYDcwb.js",
     "name": "page",
     "src": "src/app/faq/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_chunk-4WY6JWTD-DAU-Ex8K.js",
       "_layout-DcuK62cq.js",
-      "_Footer-BRZlSvKV.js",
+      "_Footer-NCyrBeYo.js",
       "_createLucideIcon-Buas3aYT.js",
       "_plus-WXNJqwYA.js",
       "_CartContext-BDazx4em.js",
@@ -438,14 +424,14 @@
     ]
   },
   "src/app/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-_QZWGsUc.js",
+    "file": "assets/page-CLs-n963.js",
     "name": "page",
     "src": "src/app/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_chunk-4WY6JWTD-DAU-Ex8K.js",
       "_layout-DcuK62cq.js",
-      "_Footer-BRZlSvKV.js",
+      "_Footer-NCyrBeYo.js",
       "_createLucideIcon-Buas3aYT.js",
       "_message-circle-Du-Be5xz.js",
       "_star-CIXZKIkJ.js",
@@ -457,14 +443,14 @@
     ]
   },
   "src/app/products/[id]/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-C5qNtPGP.js",
+    "file": "assets/page-C1IvcahE.js",
     "name": "page",
     "src": "src/app/products/[id]/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_chunk-4WY6JWTD-DAU-Ex8K.js",
       "_layout-DcuK62cq.js",
-      "_Footer-BRZlSvKV.js",
+      "_Footer-NCyrBeYo.js",
       "_CartContext-BDazx4em.js",
       "_message-circle-Du-Be5xz.js",
       "_createLucideIcon-Buas3aYT.js",
@@ -475,14 +461,14 @@
     ]
   },
   "src/app/products/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-SZFMYihq.js",
+    "file": "assets/page-DfRrb4sz.js",
     "name": "page",
     "src": "src/app/products/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_chunk-4WY6JWTD-DAU-Ex8K.js",
       "_layout-DcuK62cq.js",
-      "_Footer-BRZlSvKV.js",
+      "_Footer-NCyrBeYo.js",
       "_filter-BWc8umzU.js",
       "_createLucideIcon-Buas3aYT.js",
       "_eye-CGycnIKy.js",
@@ -495,14 +481,14 @@
     ]
   },
   "src/app/reviews/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-CDb8Ihze.js",
+    "file": "assets/page-eCAGGmB0.js",
     "name": "page",
     "src": "src/app/reviews/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_chunk-4WY6JWTD-DAU-Ex8K.js",
       "_layout-DcuK62cq.js",
-      "_Footer-BRZlSvKV.js",
+      "_Footer-NCyrBeYo.js",
       "_star-CIXZKIkJ.js",
       "_CartContext-BDazx4em.js",
       "_useUser-CvchWtA5.js",
@@ -511,12 +497,8 @@
       "_x-SXOpyycg.js"
     ]
   },
-  "src/app/root.tsx": {
-    "file": "assets/root-CiB7PO19.tsx",
-    "src": "src/app/root.tsx"
-  },
   "src/app/root.tsx?__react-router-build-client-route": {
-    "file": "assets/root-BVQTJxgT.js",
+    "file": "assets/root-C7eQ2lIt.js",
     "name": "root",
     "src": "src/app/root.tsx?__react-router-build-client-route",
     "isEntry": true,
@@ -526,7 +508,7 @@
       "_CartContext-BDazx4em.js"
     ],
     "css": [
-      "assets/root-D4hNOlje.css"
+      "assets/root-CTOZ_uDy.css"
     ]
   }
 }

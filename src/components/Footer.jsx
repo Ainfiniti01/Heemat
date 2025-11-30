@@ -11,10 +11,10 @@ export default function Footer() {
       }}
     >
       <div className="max-w-6xl mx-auto">
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-          {/* Brand Section */}
-          <div className="md:col-span-2">
+          {/* Main Footer Content */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* Brand Section */}
+            <div className="md:col-span-1">
             <h3
               className="text-2xl font-bold mb-4"
               style={{
@@ -65,87 +65,89 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4
-              className="font-semibold mb-4 text-[#ff00b3]" 
-              style={{
-                fontFamily:
-                  'Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
-              }}
-            >
-              Quick Links
-            </h4>
-            <ul className="space-y-3">
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-300 hover:text-[#ff00b3] transition-colors duration-200"
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:col-span-1">
+              {/* Quick Links */}
+              <div>
+                <h4
+                  className="font-semibold mb-4 text-[#ff00b3]"
+                  style={{
+                    fontFamily:
+                      'Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                  }}
                 >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/about"
-                  className="text-gray-300 hover:text-[#ff00b3] transition-colors duration-200"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/products"
-                  className="text-gray-300 hover:text-[#ff00b3] transition-colors duration-200"
-                >
-                  Shop
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/contact"
-                  className="text-gray-300 hover:text-[#ff00b3] transition-colors duration-200"
+                  Quick Links
+                </h4>
+                <ul className="space-y-3">
+                  <li>
+                    <a
+                      href="/"
+                      className="text-gray-300 hover:text-[#ff00b3] transition-colors duration-200"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/about"
+                      className="text-gray-300 hover:text-[#ff00b3] transition-colors duration-200"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/products"
+                      className="text-gray-300 hover:text-[#ff00b3] transition-colors duration-200"
+                    >
+                      Shop
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/contact"
+                      className="text-gray-300 hover:text-[#ff00b3] transition-colors duration-200"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Contact Info */}
+              <div>
+                <h4
+                  className="font-semibold mb-4 text-[#ff00b3]"
+                  style={{
+                    fontFamily:
+                      'Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                  }}
                 >
                   Contact
-                </a>
-              </li>
-            </ul>
+                </h4>
+                <ul className="space-y-3 text-gray-300">
+                  <li>
+                    <a
+                      href="https://wa.me/+2348148744035?text=Hello%20Heemat%27s%20Wigs%20%26%20Hair%2C%20I%27m%20interested%20in%20your%20products."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#ff00b3] transition-colors duration-200"
+                    >
+                      WhatsApp: +234 814 874 4035
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:iredeleraheemot@gmail.com"
+                      className="hover:text-[#ff00b3] transition-colors duration-200"
+                    >
+                      Email: iredeleraheemot@gmail.com
+                    </a>
+                  </li>
+                  <li>Lagos, Nigeria</li>
+                </ul>
+              </div>
+            </div>
           </div>
-
-          {/* Contact Info */}
-          <div>
-            <h4
-              className="font-semibold mb-4 text-[#ff00b3]"
-              style={{
-                fontFamily:
-                  'Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
-              }}
-            >
-              Contact
-            </h4>
-            <ul className="space-y-3 text-gray-300">
-              <li>
-                <a
-                  href="https://wa.me/+2348148744035?text=Hello%20Heemat%27s%20Wigs%20%26%20Hair%2C%20I%27m%20interested%20in%20your%20products."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#ff00b3] transition-colors duration-200"
-                >
-                  WhatsApp: +234 814 874 4035
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:iredeleraheemot@gmail.com"
-                  className="hover:text-[#ff00b3] transition-colors duration-200"
-                >
-                  Email: iredeleraheemot@gmail.com
-                </a>
-              </li>
-              <li>Lagos, Nigeria</li>
-            </ul>
-          </div>
-        </div>
 
         {/* Bottom Section */}
         <div className="border-t border-gray-700 pt-8">

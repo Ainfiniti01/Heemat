@@ -13,7 +13,12 @@ import { restart } from './plugins/restart.ts';
 import { restartEnvFileChange } from './plugins/restartEnvFileChange.ts';
 
 export default defineConfig({
-  base: process.env.VERCEL ? '/' : (process.env.NODE_ENV === 'production' ? '/Heemat/' : '/'), // Dynamically set base URL based on environment (Vercel or GitHub Pages)
+  // GitHub Pages uses /Heemat/
+  // Vercel uses /
+  base:
+    process.env.GITHUB_PAGES === "true"
+      ? "/Heemat/"
+      : "/",
   root: '.', // Explicitly set the root to the current directory
 
   // Keep them available via import.meta.env.NEXT_PUBLIC_*
@@ -78,7 +83,10 @@ export default defineConfig({
   build: {
     outDir: 'build',
     rollupOptions: {
-      input: path.resolve(__dirname, 'index.html'), // ensures index.html is entry
+      // Vite will automatically use index.html in the root as the entry point
+      // if not specified, and build it to build/client/index.html.
+      // Since the root index.html was deleted and user only wants build/client/index.html,
+      // we remove this input.
     },
   },
 

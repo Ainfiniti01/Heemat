@@ -1,8 +1,11 @@
+import { useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { Award, Heart, Users, Sparkles, Star } from "lucide-react";
 
 export default function AboutPage() {
+  const [showFullStory, setShowFullStory] = useState(false);
+  const truncatedStoryLength = 1; // Show only the first paragraph initially
   const milestones = [
     {
       year: "2023",
@@ -148,22 +151,48 @@ export default function AboutPage() {
                       'Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
                   }}
                 >
-                  <p>
-                    Hemmat’s Collection was born from a simple belief — every woman deserves to feel effortlessly beautiful, confident, and unapologetically herself. What started as a small passion for premium, natural-looking wigs has grown into a trusted brand dedicated to quality, craftsmanship, and ethical beauty.
-                  </p>
-
-                  <p>
-                    From our early days, we’ve been committed to redefining what a wig can be. We learned from real experiences, listened to real women, and focused on creating pieces that blend seamlessly, look natural, and feel incredibly comfortable. Every wig we design reflects a journey of artistry, innovation, and a deep understanding of personal expression.
-                  </p>
-
-                  <p>
-                    Over the years, our dedication to excellence has only strengthened. At Hemmat’s Collection, each unit is crafted with precision using ethically sourced hair and materials. We believe beauty should never come at the cost of integrity — and that’s why transparency, quality, and customer satisfaction remain at the heart of everything we do.
-                  </p>
-
-                  <p>
-                    Today, Hemmat’s Collection stands not just as a brand, but as a community — empowering individuals to explore new looks, embrace their style, and feel beautiful every single day.
-                  </p>
+                  {/* Story content */}
+                  {[
+                    <p key="p1">
+                      Hemmat’s Collection was born from a simple belief — every woman deserves to feel effortlessly beautiful, confident, and unapologetically herself. What started as a small passion for premium, natural-looking wigs has grown into a trusted brand dedicated to quality, craftsmanship, and ethical beauty.
+                    </p>,
+                    <p key="p2">
+                      From our early days, we’ve been committed to redefining what a wig can be. We learned from real experiences, listened to real women, and focused on creating pieces that blend seamlessly, look natural, and feel incredibly comfortable. Every wig we design reflects a journey of artistry, innovation, and a deep understanding of personal expression.
+                    </p>,
+                    <p key="p3">
+                      Over the years, our dedication to excellence has only strengthened. At Hemmat’s Collection, each unit is crafted with precision using ethically sourced hair and materials. We believe beauty should never come at the cost of integrity — and that’s why transparency, quality, and customer satisfaction remain at the heart of everything we do.
+                    </p>,
+                    <p key="p4">
+                      Today, Hemmat’s Collection stands not just as a brand, but as a community — empowering individuals to explore new looks, embrace their style, and feel beautiful every single day.
+                    </p>,
+                  ]
+                    .slice(0, showFullStory ? undefined : truncatedStoryLength)
+                    .map((paragraph) => paragraph)}
                 </div>
+                {!showFullStory && (
+                  <button
+                    onClick={() => setShowFullStory(true)}
+                    className="mt-4 text-[#ff00b3] font-semibold hover:underline"
+                    style={{
+                      fontFamily:
+                        'Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                    }}
+                  >
+                    Read More
+                  </button>
+                )}
+                {showFullStory && (
+                  <button
+                    onClick={() => setShowFullStory(false)}
+                    className="mt-4 text-[#ff00b3] font-semibold hover:underline"
+                    style={{
+                      fontFamily:
+                        'Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                    }}
+                  >
+                    Read Less
+                  </button>
+                )}
               </div>
             </div>
           </div>

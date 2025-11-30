@@ -1,4 +1,4 @@
-import{r as f,o as e,p as B}from"./chunk-4WY6JWTD-DAU-Ex8K.js";import{_ as b,R as M}from"./layout-DcuK62cq.js";import{A as I,m as i,I as S,S as H,H as _,F as W}from"./Footer-BRZlSvKV.js";import{c as k}from"./createLucideIcon-Buas3aYT.js";import{M as F}from"./message-circle-Du-Be5xz.js";import{S as j}from"./star-CIXZKIkJ.js";import{H as P,A as z}from"./heart-C8MmyeXq.js";import"./CartContext-BDazx4em.js";import"./useUser-CvchWtA5.js";import"./settings-I3-Smw97.js";import"./x-SXOpyycg.js";/**
+import{r as f,o as e,p as B}from"./chunk-4WY6JWTD-DAU-Ex8K.js";import{_ as b,R as M}from"./layout-DcuK62cq.js";import{A as I,m as i,I as S,S as H,H as _,F as W}from"./Footer-NCyrBeYo.js";import{c as k}from"./createLucideIcon-Buas3aYT.js";import{M as F}from"./message-circle-Du-Be5xz.js";import{S as j}from"./star-CIXZKIkJ.js";import{H as P,A as z}from"./heart-C8MmyeXq.js";import"./CartContext-BDazx4em.js";import"./useUser-CvchWtA5.js";import"./settings-I3-Smw97.js";import"./x-SXOpyycg.js";/**
  * @license lucide-react v0.358.0 - ISC
  *
  * This source code is licensed under the ISC license.

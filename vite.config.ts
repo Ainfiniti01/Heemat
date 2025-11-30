@@ -13,7 +13,7 @@ import { restart } from './plugins/restart.ts';
 import { restartEnvFileChange } from './plugins/restartEnvFileChange.ts';
 
 export default defineConfig({
-  base: process.env.VITE_APP_BASE_PATH || (process.env.NODE_ENV === 'production' ? '/Heemat/' : '/'), // Dynamically set base URL, default to /Heemat/ in production for GitHub Pages
+  base: process.env.VERCEL ? '/' : (process.env.NODE_ENV === 'production' ? '/Heemat/' : '/'), // Dynamically set base URL based on environment (Vercel or GitHub Pages)
   root: '.', // Explicitly set the root to the current directory
 
   // Keep them available via import.meta.env.NEXT_PUBLIC_*
@@ -77,7 +77,7 @@ export default defineConfig({
 
   build: {
     outDir: 'build',
-     rollupOptions: {
+    rollupOptions: {
       input: path.resolve(__dirname, 'index.html'), // ensures index.html is entry
     },
   },

@@ -64,8 +64,12 @@ export default defineConfig({
   },
 
   build: {
-    outDir: "build/client", // Vercel will deploy this folder
-  },
+  outDir: 'build/client',
+  emptyOutDir: true, // optional
+  rollupOptions: {
+    input: 'index.html' // explicitly tell Vite to use HTML as entry
+  }
+},
 
   server: {
     host: "0.0.0.0",

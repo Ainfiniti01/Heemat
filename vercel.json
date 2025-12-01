@@ -4,8 +4,8 @@
     { "src": "build/client/index.html", "use": "@vercel/static" },
     { "src": "build/client/**/*.{js,css,png,jpg,jpeg,gif,svg,ico,ttf,woff,woff2}", "use": "@vercel/static" }
   ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/build/client/index.html" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/build/client/index.html" }
   ],
   "headers": [
     {

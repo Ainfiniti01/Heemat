@@ -1,9 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "build/client/index.html", "use": "@vercel/static" },
-    { "src": "build/client/**/*.{js,css,png,jpg,jpeg,gif,svg,ico,ttf,woff,woff2}", "use": "@vercel/static" }
-  ],
+  "outputDirectory": "build/client",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],

@@ -5,7 +5,7 @@
     { "src": "build/client/**/*.{js,css,png,jpg,jpeg,gif,svg,ico,ttf,woff,woff2}", "use": "@vercel/static" }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/build/client/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
     {

@@ -1,9 +1,21 @@
 {
   "version": 2,
   "builds": [
-    { "src": "build/client/assets/*", "use": "@vercel/static" }
+    { "src": "build/client/index.html", "use": "@vercel/static" },
+    { "src": "build/client/**/*.{js,css,png,jpg,jpeg,gif,svg,ico,ttf,woff,woff2}", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "/build/client/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.(js|mjs)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
+    }
   ]
 }

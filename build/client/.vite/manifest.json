@@ -77,8 +77,8 @@
     "file": "assets/jsx-runtime-DC21rV20.js",
     "name": "jsx-runtime"
   },
-  "_layout-DYOX5bQY.js": {
-    "file": "assets/layout-DYOX5bQY.js",
+  "_layout-CaGSb8O7.js": {
+    "file": "assets/layout-CaGSb8O7.js",
     "name": "layout",
     "imports": [
       "_jsx-runtime-DC21rV20.js",
@@ -170,7 +170,7 @@
     ]
   },
   "index.html": {
-    "file": "assets/index-B3wz31gp.js",
+    "file": "assets/index-BkWeLwEH.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -201,13 +201,13 @@
     ]
   },
   "src/app/about/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-Cvk-C0JJ.js",
+    "file": "assets/page-WEXx5xRN.js",
     "name": "page",
     "src": "src/app/about/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_Footer-CR9Coecv.js",
       "_heart-D9j7vw2M.js",
       "_createLucideIcon-BErJ-Cw0.js",
@@ -219,36 +219,36 @@
     ]
   },
   "src/app/account/logout/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-Ds2jD8UD.js",
+    "file": "assets/page-Bm9WfaTT.js",
     "name": "page",
     "src": "src/app/account/logout/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_createLucideIcon-BErJ-Cw0.js",
       "_CartContext-B_hS_6P9.js"
     ]
   },
   "src/app/account/signin/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-DIX1_WfZ.js",
+    "file": "assets/page-CjhSpTpO.js",
     "name": "page",
     "src": "src/app/account/signin/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_CartContext-B_hS_6P9.js"
     ]
   },
   "src/app/admin/categories/add/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-ClwSYHzQ.js",
+    "file": "assets/page-BTQhJdEF.js",
     "name": "page",
     "src": "src/app/admin/categories/add/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_useUser-B7MZYAGx.js",
       "_arrow-left-DRlHrXPP.js",
       "_tag-BK4mXU_4.js",
@@ -259,13 +259,13 @@
     ]
   },
   "src/app/admin/categories/edit/[id]/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-dsdvqNr3.js",
+    "file": "assets/page-iq7hi2vR.js",
     "name": "page",
     "src": "src/app/admin/categories/edit/[id]/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_useUser-B7MZYAGx.js",
       "_arrow-left-DRlHrXPP.js",
       "_tag-BK4mXU_4.js",
@@ -276,13 +276,13 @@
     ]
   },
   "src/app/admin/categories/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-D-OFk_9o.js",
+    "file": "assets/page-Bz3nAloe.js",
     "name": "page",
     "src": "src/app/admin/categories/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_arrow-left-DRlHrXPP.js",
       "_createLucideIcon-BErJ-Cw0.js",
       "_plus-DuiyrweS.js",
@@ -294,13 +294,13 @@
     ]
   },
   "src/app/admin/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-CNqeua_r.js",
+    "file": "assets/page-QC-pmoqG.js",
     "name": "page",
     "src": "src/app/admin/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_package-CgQTzGIA.js",
       "_star-DY4clLOe.js",
       "_settings-D59Or5Sq.js",
@@ -311,13 +311,13 @@
     ]
   },
   "src/app/admin/products/add/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-CSfjLX0Z.js",
+    "file": "assets/page-B-Xu3Axu.js",
     "name": "page",
     "src": "src/app/admin/products/add/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_useUser-B7MZYAGx.js",
       "_arrow-left-DRlHrXPP.js",
       "_package-CgQTzGIA.js",
@@ -328,13 +328,13 @@
     ]
   },
   "src/app/admin/products/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-BFQK5c9f.js",
+    "file": "assets/page-Djdb20m2.js",
     "name": "page",
     "src": "src/app/admin/products/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_arrow-left-DRlHrXPP.js",
       "_package-CgQTzGIA.js",
       "_plus-DuiyrweS.js",
@@ -346,13 +346,13 @@
     ]
   },
   "src/app/admin/reviews/add/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-DYF0Ykgf.js",
+    "file": "assets/page-DI05UY8-.js",
     "name": "page",
     "src": "src/app/admin/reviews/add/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_arrow-left-DRlHrXPP.js",
       "_star-DY4clLOe.js",
       "_plus-DuiyrweS.js",
@@ -364,13 +364,13 @@
     ]
   },
   "src/app/admin/reviews/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-D-WAAn8O.js",
+    "file": "assets/page-BcHctZMt.js",
     "name": "page",
     "src": "src/app/admin/reviews/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_arrow-left-DRlHrXPP.js",
       "_star-DY4clLOe.js",
       "_filter-9Wm96I9l.js",
@@ -384,13 +384,13 @@
     ]
   },
   "src/app/cart/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-BkTCDUVv.js",
+    "file": "assets/page-BcZOutz0.js",
     "name": "page",
     "src": "src/app/cart/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_CartContext-B_hS_6P9.js",
       "_Footer-CR9Coecv.js",
       "_createLucideIcon-BErJ-Cw0.js",
@@ -402,13 +402,13 @@
     ]
   },
   "src/app/contact/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-BPvrq3RY.js",
+    "file": "assets/page-DN7RU62q.js",
     "name": "page",
     "src": "src/app/contact/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_Footer-CR9Coecv.js",
       "_createLucideIcon-BErJ-Cw0.js",
       "_message-circle-CZVYo76n.js",
@@ -419,13 +419,13 @@
     ]
   },
   "src/app/faq/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-DkjhgUdO.js",
+    "file": "assets/page-Chj0rrbP.js",
     "name": "page",
     "src": "src/app/faq/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_Footer-CR9Coecv.js",
       "_createLucideIcon-BErJ-Cw0.js",
       "_plus-DuiyrweS.js",
@@ -436,13 +436,13 @@
     ]
   },
   "src/app/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-BcoOLZiV.js",
+    "file": "assets/page-C4XUmrC-.js",
     "name": "page",
     "src": "src/app/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_Footer-CR9Coecv.js",
       "_createLucideIcon-BErJ-Cw0.js",
       "_message-circle-CZVYo76n.js",
@@ -455,13 +455,13 @@
     ]
   },
   "src/app/products/[id]/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-DbYPW8-1.js",
+    "file": "assets/page-xcimnRW7.js",
     "name": "page",
     "src": "src/app/products/[id]/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_Footer-CR9Coecv.js",
       "_CartContext-B_hS_6P9.js",
       "_message-circle-CZVYo76n.js",
@@ -473,13 +473,13 @@
     ]
   },
   "src/app/products/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-BAyP5wK0.js",
+    "file": "assets/page-RBz0MtDO.js",
     "name": "page",
     "src": "src/app/products/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_Footer-CR9Coecv.js",
       "_filter-9Wm96I9l.js",
       "_createLucideIcon-BErJ-Cw0.js",
@@ -493,13 +493,13 @@
     ]
   },
   "src/app/reviews/page.jsx?__react-router-build-client-route": {
-    "file": "assets/page-BViTqXhy.js",
+    "file": "assets/page-B7E_K835.js",
     "name": "page",
     "src": "src/app/reviews/page.jsx?__react-router-build-client-route",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-DC21rV20.js",
-      "_layout-DYOX5bQY.js",
+      "_layout-CaGSb8O7.js",
       "_Footer-CR9Coecv.js",
       "_star-DY4clLOe.js",
       "_CartContext-B_hS_6P9.js",
@@ -510,7 +510,7 @@
     ]
   },
   "src/app/root.tsx?__react-router-build-client-route": {
-    "file": "assets/root-BDwd9CYU.js",
+    "file": "assets/root-DHn52K5y.js",
     "name": "root",
     "src": "src/app/root.tsx?__react-router-build-client-route",
     "isEntry": true,
@@ -520,7 +520,7 @@
       "_CartContext-B_hS_6P9.js"
     ],
     "css": [
-      "assets/root-CTOZ_uDy.css"
+      "assets/root-opx8FIMH.css"
     ]
   }
 }

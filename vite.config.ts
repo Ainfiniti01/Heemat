@@ -67,7 +67,7 @@ export default defineConfig({
   outDir: 'build/client',
   emptyOutDir: true, // optional
   rollupOptions: {
-    input: 'index.html' // explicitly tell Vite to use HTML as entry
+    input: 'src/main.jsx' // Use src/main.jsx as the entry point
   }
 },
 

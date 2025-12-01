@@ -1,0 +1,1 @@
+import{r as e}from"./jsx-runtime-Mj6qsmiN.js";const a={id:"mock-user-123",name:"John Doe",email:"john.doe@example.com"};function m(){const[t,s]=e.useState(null),[r,o]=e.useState(!0),[n,c]=e.useState(!1);return e.useEffect(()=>{const u=setTimeout(()=>{s(a),o(!1)},100);return()=>clearTimeout(u)},[]),{user:t,isLoading:r,isError:n,isAuthenticated:!!t}}export{m as u};

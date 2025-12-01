@@ -4,6 +4,6 @@
     { "src": "build/client/assets/*", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/build/client/assets/index.html" }
+    { "src": "/(.*)", "dest": "/build/client/index.html" }
   ]
 }

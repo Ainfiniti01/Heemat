@@ -13,26 +13,21 @@ import { restart } from './plugins/restart';
 import { restartEnvFileChange } from './plugins/restartEnvFileChange';
 
 export default defineConfig({
-  base: "/", // Vercel root
+  base: "/",
   root: ".",
-
-  envPrefix: "NEXT_PUBLIC_",
-
-  optimizeDeps: {
-    include: ["fast-glob", "lucide-react"],
-    exclude: ["fsevents", "lightningcss"],
-  },
 
   plugins: [
     nextPublicProcessEnv(),
     restartEnvFileChange(),
-
     babel({
       include: ["src/**/*.{js,jsx,ts,tsx}"],
       exclude: /node_modules/,
-      babelConfig: { babelrc: false, configFile: false, plugins: ["styled-jsx/babel"] },
+      babelConfig: {
+        babelrc: false,
+        configFile: false,
+        plugins: ["styled-jsx/babel"]
+      },
     }),
-
     restart({
       restart: [
         "src/**/page.jsx",
@@ -43,17 +38,19 @@ export default defineConfig({
         "src/**/route.ts",
       ],
     }),
-
     consoleToParent(),
     loadFontsFromTailwindSource(),
     addRenderIds(),
-
-    reactRouter(),
-
+    reactRouter(),  // IMPORTANT
     tsconfigPaths(),
     aliases(),
     layoutWrapperPlugin(),
   ],
+
+  build: {
+    outDir: "build/client",
+    emptyOutDir: true,
+  },
 
   resolve: {
     alias: {
@@ -62,14 +59,6 @@ export default defineConfig({
     },
     dedupe: ["react", "react-dom"],
   },
-
-  build: {
-  outDir: 'build/client',
-  emptyOutDir: true, // optional
-  rollupOptions: {
-    input: 'index.html' // explicitly tell Vite to use HTML as entry
-  }
-},
 
   server: {
     host: "0.0.0.0",

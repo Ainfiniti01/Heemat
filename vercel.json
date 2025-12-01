@@ -1,18 +1,4 @@
 {
   "version": 2,
-  "outputDirectory": "build/client",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)\\.(js|mjs)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
-      ]
-    }
-  ]
+  "outputDirectory": "build/client"
 }
